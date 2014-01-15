@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------
+- Name:						fonts.css
+- Latest update:			06/06/12
+== STRUCTURE ===================================================
+- Detail:					Font-face / font managment
+- Font-Size:				16px = 100%
+- Line-Height:				18px = 1.125em 
+							(em is a font unit approved by the W3C 
+							recomended to be used across all browsers) 
+---------------------------------------------------------------*/
+
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'AvantGarde';
+    src: url('fonts/avgardm-webfont.eot');
+    src: url('fonts/avgardm-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/avgardm-webfont.woff') format('woff'),
+         url('fonts/avgardm-webfont.ttf') format('truetype'),
+         url('fonts/avgardm-webfont.svg#AvantGardeMdBTMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaR';
+    src:url(fonts/AG_Helvetica_Regular.ttf);
+}
+
+@font-face {
+    font-family: 'AvantGarde_bk';
+    src: url('fonts/avgardn-webfont.eot');
+    src: url('fonts/avgardn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/avgardn-webfont.woff') format('woff'),
+         url('fonts/avgardn-webfont.ttf') format('truetype'),
+         url('fonts/avgardn-webfont.svg#avantgarde_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font: 100%/1.4  'AvantGarde_bk', Arial, sans-serif;
+	color: white;
+}
+
+
+

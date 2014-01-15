@@ -1,0 +1,194 @@
+<div>
+
+<script type="text/template" id="pagesTemplate">
+<div id="pages"></div>
+</script>
+
+<!-- Main Page  -->
+<script type="text/template" id="mainPageTemplate">
+<div id="mainPage" class="pageView">
+	<div class="header">
+		<ul>
+			<li >
+				<div id="backButton" style="display: none;" class="btn_header_left">
+					<div class="btn_holder">
+						<img src="images/btn_back.png" />
+					</div> 
+				</div>
+			</li>
+			<li class="logo">
+				<div class="logohead"><!-- --></div>
+			</li>
+			<li id="settingsButton"> 
+				<div class="btn_header_right">
+					<div class="btn_holder">
+						<img src="images/btn_settings.png" />
+					</div>
+				</div> 
+			</li>
+		</ul>
+	</div>
+	<div id="content" class="pageView">
+	</div>
+	<div class="footer">
+		<div class="two-col-layout">
+			<div class="col">
+				<button id="toggleTV" class="customButton">
+					View On TV
+				</button>
+			</div>
+			<div class="col">
+				<button id="toggleVideo" class="customButton">
+					Watch Video
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="settingsPageTemplate">
+<div id="settingsPage" class="pageView">
+	<div id="scroller">
+		<p class="configTitle">Settings</p>
+		<button id="testDrive" class="customButton">Schedule a test drive</button>
+		<div id="share">
+			<p id="shareTitle">Share</p>
+			<div id="social" class="two-col-layout">
+				<div class="col">
+					<img id="facebook" src="images/facebookBtn.png">	
+				</div>
+				<div class="col">
+					<img id="twitter" src="images/twitterBtn.png">	
+				</div>
+			</div>
+		</div>
+		<button id="notifications" class="customButton">notifications</button>
+		<button id="quitTVApp" class="customButton">Quit TV App</button>
+		<button id="logout" class="customButton">Logout</button>
+		
+		<!-- Can't get the scroller to act right. Adding spacer here. dunno -->
+		<div style="height:2em"></div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="sliderImagesTemplate">
+	<div id="slider" class="swipe">
+		<div id="sliderContainer">
+			{{#images}}
+			{{/images}}
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="modelPageTemplate">
+<div id="modelPage" class="pageView">
+	<p class="configTitle">Select a Model</p>
+	<div class="configSelections">
+		<div id="slider" class="swipe">
+			<div id="sliderContainer">
+				<!-- IMAGES GET INJECTED HERE DYNAMICALLY: -->
+				<!-- Example: <div style="display:block"><img src="images/test/cartest.jpg"></div> -->
+			</div>
+		</div>
+		<h3 class="ui-tip">Touch to Select or Swipe to Next</h3>
+		<nav>			
+			<span id='position'></span>
+			<a id="prev">prev</a>
+			<a id="next">next</a>		
+		</nav>
+	</div>
+	<div id="configInfo">
+		<p class="configSelectionModel">2013 Genesis Coupe</p>
+		<p class="configSelectionTrim">Basic Trim</p>
+		<p class="configSelectionColor">Metallic Silver</p>
+		<div id="configPrice">
+			<p class="configSelectionPrice">$24,250 MSRP</p>
+			<p id="priceUnits">MSRP</p>
+		</div>
+	</div>
+	
+</div>
+</script>
+
+<script type="text/template" id="trimPageTemplate">
+<div id="trimPage" class="pageView">
+	<p class="configTitle">Select a Trim</p>
+	<div class="configSelections">
+		<div id="slider" class="swipe">
+			<div id="sliderContainer">
+				<!-- IMAGES GET INJECTED HERE DYNAMICALLY: -->
+				<!-- Example: <div style="display:block"><img src="images/test/cartest.jpg"></div> -->
+			</div>
+		</div>
+		<h3 class="ui-tip">Touch to Select or Swipe to Next</h3>
+		<nav>
+			<span id='position'></span>
+			<a id="prev">prev</a>
+			<a id="next">next</a>
+		</nav>
+	</div>
+	<div id="configInfo">
+		<p class="configSelectionModel">2013 Genesis Coupe</p>
+		<p class="configSelectionTrim">Basic Trim</p>
+		<p class="configSelectionColor">Metallic Silver</p>
+		<div id="configPrice">
+			<p class="configSelectionPrice">$24,250 MSRP</p>
+			<p id="priceUnits">MSRP</p>
+		</div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="colorPageTemplate">
+<div id="colorPage" class="pageView">
+	<p class="configTitle">Select a Color</p>
+	<div class="configSelections">
+		<div id="slider" class="swipe">
+			<div id="sliderContainer">
+				<!-- IMAGES GET INJECTED HERE DYNAMICALLY: -->
+				<!-- Example: <div style="display:block"><img src="images/test/cartest.jpg"></div> -->
+			</div>
+		</div>
+		<h3 class="ui-tip">Touch to Select or Swipe to Next</h3>
+		<nav class="color-selector">
+		</nav>		
+	</div>
+	<div id="configInfo">
+		<p class="configSelectionModel">2013 Genesis Coupe</p>
+		<p class="configSelectionTrim">Basic Trim</p>
+		<p class="configSelectionColor">Metallic Silver</p>
+		<div id="configPrice">
+			<p class="configSelectionPrice">$24,250 MSRP</p>
+			<p id="priceUnits">MSRP</p>
+		</div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="threeSixtyPageTemplate">
+<div id="threeSixtyPage" class="pageView">
+	<p class="configTitle">Your Hyundai!</p>
+	<div class="configSelections">
+		<div id="threeSixtyView">
+			<img src="">
+		</div>
+		<div class="rotate-indicator">
+			<img src="images/360-indicator.png" alt="rotate"></img>
+			<h3 class="ui-tip-drag">Touch and Drag to Rotate</h3>
+		</div>
+	</div>
+	<div id="configInfo">
+		<p class="configSelectionModel">2013 Genesis Coupe</p>
+		<p class="configSelectionTrim">Basic Trim</p>
+		<p class="configSelectionColor">Metallic Silver</p>
+		<div id="configPrice">
+			<p class="configSelectionPrice">$24,250 MSRP</p>
+			<p id="priceUnits">MSRP</p>
+		</div>
+	</div>
+</div>
+</script>
+
+</div>

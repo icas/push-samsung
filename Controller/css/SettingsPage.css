@@ -1,0 +1,65 @@
+
+#settingsPage #testDrive {	
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	height: 2em;
+}
+
+#settingsPage #share {
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width: 15em;
+	height: 10em;
+	border: solid 1px black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#settingsPage #share #shareTitle {
+	margin-top: 0em;
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+#settingsPage #share #facebook {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box; /* Safari */
+	display: block;
+	width : 100%;
+}
+
+#settingsPage #share #twitter {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box; /* Safari */
+	display: block;
+	width : 100%;
+}
+
+#settingsPage #notifications {	
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	height: 2em;
+}
+
+#settingsPage #quitTVApp {	
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	height: 2em;
+}
+
+#settingsPage #logout {	
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	height: 2em;
+}
+

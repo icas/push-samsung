@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width,height=416,initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	
+	<title>TurnerACR Controller</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/PreloaderView.css">
+	<link rel="stylesheet" href="css/MainPageHeader.css">
+	<link rel="stylesheet" href="css/MainPageFooter.css">
+	<link rel="stylesheet" href="css/SettingsPage.css">
+	<link rel="stylesheet" href="css/Configurations.css">
+	<link rel="stylesheet" href="css/ModelPage.css">
+	<link rel="stylesheet" href="css/TrimPage.css">
+	<link rel="stylesheet" href="css/ColorPage.css">
+	<link rel="stylesheet" href="css/ThreeSixtyPage.css">
+	<link rel="stylesheet" href="css/ColorSelector.css">
+</head>
+<body>
+	
+	<div id="preloaderView" class="pageView">
+      	<div id="progressContainer">
+	        <div id="progressBar"></div>
+	        <p id="progressText">Loading...</p>
+      	</div>
+    </div>
+	
+	<!--  KontrolTV API -->
+    <script type="text/javascript" src="http://dev.runtime.movl.com/kontroltv1.3-min.js"></script>
+    
+	<!--  MOVL Util -->
+	<script type="text/javascript" src="http://dev.runtime.movl.com/movlutil1.3-min.js"></script>
+	<script type="text/javascript" src="js/lib/multiscreen-mobile-1.0.7.min.js"></script>
+	
+    <!-- LIBS -->
+    <script type="text/javascript" src="js/lib/pxloader/PxLoader.js"></script>
+    <script type="text/javascript" src="js/lib/pxloader/PxLoaderImage.js"></script>
+    <script type="text/javascript" src="js/lib/log4javascript_uncompressed.js"></script>
+    <script type="text/javascript" src="js/lib/swipe.min.js"></script>
+
+    
+
+    <!-- Components -->
+    <script type="text/javascript" src="js/components/ColorSelector.js"></script>
+    
+    <!-- Preloader -->
+    <script type="text/javascript" src="js/views/PreloaderView.js"></script>
+    <script type="text/javascript" src="js/ImagePreloader.js"></script>
+    
+    <!-- PAGE MANAGER -->
+    <script type="text/javascript" src="js/pages/PageManager.js"></script>
+    
+    <!-- MAIN PAGE -->
+    <script type="text/javascript" src="js/pages/main/MainPage.js"></script>
+    <script type="text/javascript" src="js/pages/main/MainPageHeader.js"></script>
+    <script type="text/javascript" src="js/pages/main/MainPageFooter.js"></script>
+    
+    <!-- SETTINGS PAGE -->
+    <script type="text/javascript" src="js/pages/main/SettingsPage.js"></script>
+    
+    <!-- Vehicle Pages -->
+    <script type="text/javascript" src="js/pages/main/vehicle/ModelPage.js"></script>
+    <script type="text/javascript" src="js/pages/main/vehicle/TrimPage.js"></script>
+    <script type="text/javascript" src="js/pages/main/vehicle/ColorPage.js"></script>
+    <script type="text/javascript" src="js/pages/main/vehicle/ThreeSixtyPage.js"></script>
+    
+    <!-- PushManager Client -->
+    <script type="text/javascript" src="js/PushManagerClient.js"></script>
+
+    <script type="text/javascript" src="js/kontroltv_faker.js"></script>
+    
+	<!-- App -->
+	<script type="text/javascript" src="js/AppData.js"></script>
+	<script type="text/javascript" src="js/App.js"></script>
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script>	
+	
+	<!-- Debug -->
+	<!--script src="http://192.168.0.12:8081/target/target-script-min.js#anonymous"></script>
+
+</body>
+</html>

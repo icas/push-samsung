@@ -9,9 +9,8 @@ var qs = require('querystring');
 
 
 app.use(logfmt.requestLogger());
-
+app.use("/Controller", express.static(__dirname + '/Controller'));
 app.post('/push', function(request, response) {
-  console.log("aaa")
   var body = "";
   request.on('data', function (data) {
       body += data;
@@ -50,7 +49,7 @@ Pusher.pushToAll = function(data){
     "notification" : {
          "alert" : data.android.alert,
          "android": {
-          "extra": {"roomCode": data.roomCode}
+          "extra": {"url": "http://agile-ocean-8448.herokuapp.com/Controller/index.html?roomCode="+data.roomCode}
          }
          
     },

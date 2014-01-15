@@ -1,0 +1,46 @@
+{
+   "env": "dev",
+    "envs": {
+        "prod": {
+            "appKey": "096e137c-6cb6-423e-8bf4-f8df216ce8c6",
+            "host": "mcp.connect.movl.com",
+            "port": 80   
+        },
+        "stage": {
+            "appKey": "096e137c-6cb6-423e-8bf4-f8df216ce8c5",
+            "host": "stage.mcp.connect.movl.com",
+            "port": 80
+        },
+        "dev": {
+            "appKey": "096e137c-6cb6-423e-8bf4-f8df216ce8c4",
+            "host": "stage.mcp.connect.movl.com",
+            "port": 80
+        }
+    },
+    "global": {
+        "version": "0.001",
+        "debug": true,
+        "scrollToTop": true,
+        "data": "data.json?v=1",
+        "videos": "videos.json?v=1",
+        "defaultImage": "defaultImage.jpg",
+        "imagesPath": "http://aspyr-staging.s3.amazonaws.com/data/images/",
+        "videosPath": "http://aspyr-staging.s3.amazonaws.com/data/videos/",
+        "testDriveLink": "https://www.hyundaiusa.com/shopping-tools/schedule-test-drive.aspx",
+        "templates": "templates.html",
+        "logging": {
+            "enabled": true,
+            "logMovl": false,
+            "remoteLogging": {
+                "enabled": false,
+                "url": "http://10.1.10.14:3000"
+            },
+            "consoleLogging": {
+                "enabled": true
+            }
+        },
+        "preloader": {
+            
+        }
+    }
+}

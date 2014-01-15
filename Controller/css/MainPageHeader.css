@@ -1,0 +1,102 @@
+.header{
+	position: relative;
+	top:0;
+	background: -webkit-gradient(linear, left top, left bottom, from( grey), to( 
+	black), color-stop(0.02, 
+	#545454), color-stop(0.04, 
+	#3B3B3B), color-stop(0.5, 
+	#1D1D1D), color-stop(0.51, 
+	black));
+	display: block;
+	width: 100%;
+	height: 3.250em;
+	-webkit-box-shadow: 0em 0.188em 0.625em 0.313em 
+	rgba(40, 40, 40, 1);
+	box-shadow: 0em 0.188em 0.625em 0.313em 
+	rgba(40, 40, 40, 1);
+	z-index: 1;   
+}
+
+
+.header ul{
+	width: 100%;
+	height: 100%;
+}
+
+.header li{
+	width: 20%;
+	text-align: center;
+	float: left;
+	color: #7D7D7D;
+	position: relative;
+	height: inherit;
+}
+
+.header li.logo{
+	width: 60%;
+}
+
+.header .logohead{
+	background-image: url(../images/header_logo.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	width: 12em;
+	height: 2.375em;
+	padding: 0.313em 0;
+	margin: 0.125em 0 0 -6em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.btn_header_left, .btn_header_right{
+	background: rgba(120, 120, 120, 0.1);
+	-webkit-border-radius: 0.313em;
+	position: relative;
+	-webkit-box-shadow: 0 0.063em 0 rgba(255, 255, 255, 0.35), inset 0 0.063em 0.063em rgba(0, 0, 0, 0.25);
+	border: 0.125em solid rgba(0, 0, 0, 0.4);
+	top: 50%;
+	width: 2.2em;
+	height: 2.1em;
+	margin-top: -1.25em;
+}
+
+.btn_header_left{
+	margin-left: 0;
+	margin-right: auto;
+	left: 0.5em;
+} 
+
+.btn_header_right {
+	margin-right: 0;
+	margin-left: auto;
+	right: 0.5em;
+}
+
+.btn_header_left img, .btn_header_right img {
+	top: 0;
+	width: 1.125em;
+	height: 1.125em;
+	margin-top: 0.5em;
+	position: relative;
+}
+
+.btn_holder {
+/*	background: -webkit-gradient(linear, left top, left bottom, from( grey), to( black), color-stop(0.02, 
+	#545454), color-stop(0.04, 
+	#3B3B3B), color-stop(0.5, 
+	#1D1D1D), color-stop(0.51, 
+	black));*/
+	height: 100%;
+	-webkit-border-radius: 0.313em;
+	border-color:#999;
+}
+
+.btn_holder:active /*, .btn_holder:hover*/{
+	background: rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(0, 0, 0, 0.9);
+}
+
