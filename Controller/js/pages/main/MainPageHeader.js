@@ -38,7 +38,7 @@ MainPageHeader = movl.ui.View.extend({
 	},
 	
 	showBackButton: function(show) {
-		if (show && !movl.ui.isAndroid()) {
+		if (show) {
 			this.$('#backButton').show();
 		} else {
 			this.$('#backButton').hide();
