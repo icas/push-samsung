@@ -10,7 +10,12 @@ var qs = require('querystring');
 
 app.use(logfmt.requestLogger());
 app.use("/Controller", express.static(__dirname + '/Controller'));
-app.post('/push', function(request, response) {
+app.get('/ping-push', function(request, response, next) {
+  Pusher.pushToAll({ roomCode: "Test", android: {alert: 'Test Demo is up and running' } });
+  next();
+});
+
+app.post('/push', function(request, response, next) {
   var body = "";
   request.on('data', function (data) {
       body += data;
@@ -31,9 +36,7 @@ app.post('/push', function(request, response) {
       Pusher.pushToAll(JSON.parse(keys[0]));
       // use POST
   });
-
-    //res.send('Hello World!');
-
+  response.send('Push Sent');
 });
 
 
