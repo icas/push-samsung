@@ -36,7 +36,7 @@ app.post('/push', function(request, response, next) {
       Pusher.pushToAll(JSON.parse(keys[0]));
       // use POST
   });
-  response.send('Push Sent');
+  //response.send('Push Sent');
 });
 
 
