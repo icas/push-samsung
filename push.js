@@ -8,8 +8,18 @@ var qs = require('querystring');
 
 
 
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    next();
+}
+
 app.use(logfmt.requestLogger());
 app.use("/Controller", express.static(__dirname + '/Controller'));
+app.use(allowCrossDomain);
+
 app.get('/ping-push', function(request, response, next) {
   Pusher.pushToAll({ roomCode: "Test", android: {alert: 'Test Demo is up and running' } });
   next();
@@ -34,9 +44,8 @@ app.post('/push', function(request, response, next) {
       }
       
       Pusher.pushToAll(JSON.parse(keys[0]));
-      // use POST
   });
-  //response.send('Push Sent');
+  response.send("Pushed");
 });
 
 
@@ -58,7 +67,6 @@ Pusher.pushToAll = function(data){
     },
     "device_types" :  "all"
   };
-
   ua.pushNotification("/api/push", payload0, function(error) {
     console.log(error)
   });
