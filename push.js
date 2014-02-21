@@ -61,7 +61,7 @@ Pusher.pushToAll = function(data){
     "notification" : {
          "alert" : data.android.alert,
          "android": {
-          "extra": {"url": "http://agile-ocean-8448.herokuapp.com/Controller/index.html?roomCode="+data.roomCode+"&"}
+          "extra": {"url": "http://samsung-koombea.s3.amazonaws.com/turneracr/Controller/index.html?roomCode="+data.roomCode+"&", serviceURI: data.serviceURI}
          }
          
     },
